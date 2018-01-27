@@ -14,7 +14,16 @@ module.exports = robot =>
            return robot.emit('error', err, msg);
          }
          data = JSON.parse(body).status;
-
-         return msg.send(`Production status: ${data.Production}\nDevelopment status: ${data.Development}`);
+         if (data.Production == "green") {
+           prodStatus = ":rocket: Green :white_check_mark:"
+         } else {
+           prodStatus = data.Production
+         }
+         if (data.Development == "green") {
+           devStatus = ":computer: Green :white_check_mark:"
+         } else {
+           devStatus = data.Development
+         }
+         return msg.send(`Production status: ${prodStatus}\nDevelopment status: ${devStatus}`);
       });
   });
