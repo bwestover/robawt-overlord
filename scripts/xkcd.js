@@ -17,5 +17,5 @@ module.exports = robot =>
          comic = JSON.parse(body).img;
          robot.logger.debug(comic);
     return msg.send(comic);
-  })
-;
+    })
+  };
