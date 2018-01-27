@@ -6,8 +6,9 @@
 module.exports = robot =>
 
   robot.respond(/xkcd\b/i, function(msg) {
-    robot.logger.info("Hello World");
-    msg.http("https://xkcd.com/614/info.0.json")
+    //robot.logger.info("Hello World");
+    n = Math.floor(Math.random() * Math.floor(1947));
+    msg.http(`https://xkcd.com/${n}/info.0.json`)
       .get()(function(err, res, body) {
          robot.logger.info(body);
          if (err) {
