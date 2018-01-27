@@ -24,6 +24,6 @@ module.exports = robot =>
          } else {
            devStatus = data.Development
          }
-         return msg.send(`Production status: ${prodStatus}\nDevelopment status: ${devStatus}`);
+         return msg.send(`*Production status:* ${prodStatus}\n*Development status:* ${devStatus}`);
       });
   });
