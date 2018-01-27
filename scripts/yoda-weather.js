@@ -12,7 +12,7 @@ module.exports = robot =>
     if (location == 'salida, ca'){
       msg.send("Today in salida, rainy, ca it will be.  Hmmmmmm.");;
     } else if (location == 'boston, ma'){
-      msg.send("Today in boston, light rain and windy will ma it be.  Lows overnight in the mid 40s.  Yeesssssss.");
+      msg.send("Today in boston, showers possible will ma it be.  Lows overnight in the mid 40s.  Yeesssssss.");
     }
 
 //     //Pull forecast from wunderground
