@@ -1,5 +1,5 @@
 # Description:
-#   Script for controlling the doors.
+#   Send a troll bomb.
 
 sleep = (ms) ->
   start = new Date().getTime()
