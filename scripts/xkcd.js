@@ -2,7 +2,7 @@
 //   Return XKCD comics
 //
 // Commands:
-//   hubot xckd - returns a random XKCD comics
+//   hubot xkcd - returns xkcd comics
 module.exports = robot =>
 
   robot.respond(/xkcd\b ?(.*)/i, function(msg) {
