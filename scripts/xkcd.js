@@ -5,9 +5,19 @@
 //   hubot xckd - returns a random XKCD comics
 module.exports = robot =>
 
-  robot.respond(/xkcd\b/i, function(msg) {
-    //robot.logger.info("Hello World");
-    n = Math.floor(Math.random() * Math.floor(1947));
+  robot.respond(/xkcd\b ?(.*)/i, function(msg) {
+    const comicNum = msg.match[1];
+    // need to check if there is an argument, and if it is a number
+    robot.logger.info(`comicNum is ${comicNum}`);
+    if(comicNum == '') {
+      n = Math.floor(Math.random() * 1947) + 1;
+    }
+    else {
+      if(isNaN(comicNum)){
+        return msg.send("Argument must be a number.");
+      };
+      n = comicNum
+    };
     msg.http(`https://xkcd.com/${n}/info.0.json`)
       .get()(function(err, res, body) {
          robot.logger.info(body);
