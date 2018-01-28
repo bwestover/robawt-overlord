@@ -10,5 +10,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-wunderground",
-  "hubot-business-cat"
+  "hubot-business-cat",
+  "hubot-victory"
 ]

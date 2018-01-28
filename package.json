@@ -19,6 +19,7 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.4.0",
+    "hubot-victory": "^1.5.3",
     "hubot-wunderground": "^1.0.1"
   },
   "engines": {
