@@ -9,6 +9,5 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-wunderground",
-  "hubot-business-cat"
+  "hubot-wunderground"
 ]
