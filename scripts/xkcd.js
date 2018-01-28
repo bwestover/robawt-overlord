@@ -8,7 +8,6 @@ module.exports = robot =>
   robot.respond(/xkcd\b ?(.*)/i, function(msg) {
     const comicNum = msg.match[1];
     // need to check if there is an argument, and if it is a number
-//    robot.logger.info(`comicNum is ${comicNum}`);
     if(comicNum == '') {
       n = Math.floor(Math.random() * 1947) + 1;
     }
@@ -20,13 +19,11 @@ module.exports = robot =>
     };
     msg.http(`https://xkcd.com/${n}/info.0.json`)
       .get()(function(err, res, body) {
-//         robot.logger.info(body);
          if (err) {
            robot.logger.error(err);
            return robot.emit('error', err, msg);
          }
          comic = JSON.parse(body).img;
-//         robot.logger.debug(comic);
          return msg.send(comic);
       });
   });
