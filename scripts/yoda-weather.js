@@ -28,13 +28,13 @@ module.exports = robot =>
     msg.http(`https://yoda.p.mashape.com/yoda?sentence=${encodeURIComponent(forecast)}`)
       .header('X-Mashape-Key',`${process.env.HUBOT_MASHAPE_KEY}`)
       .get()(function(err, res, body) {
-//           robot.logger.info(body);
+           robot.logger.info(body);
            if (err) {
              robot.logger.error(err);
              return robot.emit('error', err, msg);
            }
 
-      yodasays = body
+      yodasays = JSON.parse(body)
       msg.send(yodasays)
     });
    });
