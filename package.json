@@ -5,7 +5,7 @@
   "author": "bwestover <bwestover@github.com>",
   "description": "Helpful robot. Might be evil.",
   "dependencies": {
-    "hubot": "^2.19.0",
+    "hubot": "^3.1.1",
     "hubot-business-cat": "^1.5.14",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
@@ -18,9 +18,9 @@
     "hubot-rules": "^0.1.2",
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.1",
-    "hubot-slack": "^4.4.0",
+    "hubot-slack": "^4.5.4",
     "hubot-victory": "^1.5.3",
-    "hubot-wunderground": "^1.0.1"
+    "hubot-wunderground": "^1.0.4"
   },
   "engines": {
     "node": "8.5.x"
