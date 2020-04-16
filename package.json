@@ -5,7 +5,7 @@
   "author": "bwestover <bwestover@github.com>",
   "description": "Helpful robot. Might be evil.",
   "dependencies": {
-    "https-proxy-agent": "^2.2.0",
+    "https-proxy-agent": "^2.2.3",
     "hubot": "^3.1.1",
     "hubot-business-cat": "^1.5.14",
     "hubot-diagnostics": "0.0.2",
