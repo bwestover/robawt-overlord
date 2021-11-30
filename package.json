@@ -21,7 +21,8 @@
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.7.1",
     "hubot-victory": "^1.5.3",
-    "hubot-wunderground": "^1.0.4"
+    "hubot-wunderground": "^1.0.4",
+    "redis": "^3.1.2"
   },
   "engines": {
     "node": "8.5.x"
